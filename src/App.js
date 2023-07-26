@@ -6,13 +6,15 @@ import Saludar from "./components/Saludar";
 import Saludar2 from "./components/Saludar2";
 function App() {
     const user = {
-        nombre: " Pablo Muñiz Montoya",
+        nombre: "Pablo Muñiz Montoya",
         edad: "36",
         color: "Azul",
     };
 
-    const saludarFn = (nombre) => {
-        console.log("Hola" + nombre);
+    const saludarFn = (nombre, edad) => {
+        /* console.log("Hola" + nombre + " tiene " + edad + " años"); */
+
+        console.log(`Hola ${nombre}, tiene ${edad} años.`);
     };
     return (
         <div className="App">
